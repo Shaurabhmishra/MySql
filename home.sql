@@ -372,7 +372,7 @@ select count(distinct author_lname) from books;
 select count(title) from books where title like '%the%';
 
 select author_lname, count(*) from books group by author_lname;
-select author_fname, author_lname, count(*) from books group by author_lname;
+select author_fname, author_lname, count(*) from books group by author_fname, author_lname;
 
 
 
